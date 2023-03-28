@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuzzUp Entertainment</title>
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+    <script src="js/all.js"></script>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Aladin&family=Amaranth&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,700;1,600&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+  <!-- Javascript to the top button -->
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-long-arrow-up"></i></button>
+
+
+  <!--navbar-->
+  <nav class="navbar navbar-expand-md navbar-dark py-3 navbg">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#content">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+    <a class="navbar-brand" href="index.html"><img src="img/buzzup.png" alt="" width="45" height="35" class="d-inline-block align-top mr-2 rounded filt"><i>BuzzUp</i></a>
+    <div class="collapse navbar-collapse" id="content">
+       <ul class="navbar-nav ml-md-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">News</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" data-toggle="dropdown">Music</a>
+          <div class="dropdown-menu navbg">
+            <a class="dropdown-item text-light bg-transparent" href="#">Nigerian</a>
+            <a class="dropdown-item text-light bg-transparent" href="#">Foreign</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item text-light bg-transparent" href="#">Gospel</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown">
+            Videos
+          </a>
+          <div class="dropdown-menu navbg">
+            <a class="dropdown-item text-light" href="#">Music</a>
+            <a class="dropdown-item text-light" href="#">Movies</a>
+            <div class="dropdown-divider text-light"></div>
+            <a class="dropdown-item text-light" href="#">Others</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Sports</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Science/Technology</a>
+        </li>
+      </ul>
+      
+      <form class="form-inline">
+       <div class="input-group">
+          <input type="search" id="form1" class="form-control" placeholder="search">
+          <div class="input-group-append">
+            <button type="button" class="btn btn-dark">
+              <i class="fas fa-search"></i>
+            </button>
+         </div>
+       </div>
+      </form>
+  </nav>
+
+
+  <!-- nav -->
+  <section class="mb-4">
+  <ul class="h4 nav navbg1 py-2">
+    <!-- <div class="row">
+      <div class="col-xm-4 mx-2"> -->
+    <li class="nav-item">
+      <a href="My_blog_home.html" class="nav-link active hero-btn">Home</a>
+    </li>
+    <!-- </div> -->
+    <!-- <div class="col-xm-4 mx-2"> -->
+    <!-- <li class="nav-item">
+      <a href="" class="nav-link disabled hero-btn">Services</a>
+    </li> -->
+    <!-- </div> -->
+    <!-- <div class="col-xm-4 mx-2"> -->
+    <li class="nav-item">
+      <a href="privacy_policy.html" class="nav-link hero-btn">Privacy policy</a>
+    </li>
+    <!-- </div> -->
+    <!-- <div class="col-xm-4 mx-2"> -->
+    <li class="nav-item">
+      <a href="contact_us.html" class="nav-link hero-btn">Contact us</a>
+    </li>
+    <!-- </div> -->
+    <!-- <div class="col-xm-4 mx-2"> -->
+    <li class="nav-item hero-btn">
+      <a href="about_us_blog.html" class="nav-link hero-btn">About us</a>
+    </li>
+    <!-- </div> -->
+    <!-- <div class="mx-2"> -->
+    <li class="nav-item">
+      <a href="" class="nav-link hero-btn" data-toggle="modal" data-target="#modal">Advert placement</a>
+    </li>
+    <li class="nav-item ml-5">
+      <a href="sign-in.html" class="nav-link hero-btn" data-toggle="tooltip" data-placement="left" title="SIGN IN"><i class="fa-solid fa-right-to-bracket"></i></a>
+    </li>
+    <!-- </div> -->
+  <!-- </div> -->
+  </ul>
+ </section>
+
+ <!-- Advert -->
+   <section class="py-2 mx-3">
+     <div class="container">
+       <div class="row">
+         <div class="col-md-6 col-lg-4 mb-2 px-1">
+           <img src="img/advert-4.webp" alt="" class="rounded d-flex mx-auto shade" width="100%" height="150px">
+         </div>
+         <div class="col-md-6 col-lg-4 mb-2 px-1">
+          <img src="img/advert-2.jpeg" alt="" class="rounded d-flex mx-auto shade" width="100%" height="150px">
+        </div>
+        <div class="col-md-6 col-lg-4 my-md-2 my-lg-0 mx-auto px-1">
+          <img src="img/advert-3.jpeg" alt="" class="rounded d-flex mx-auto shade" width="100%" height="150px">
+        </div>
+       </div>
+     </div>
+   </section>
+
+  <!-- single page -->
+   <section class="mx-3 pt-2">
+      <div class="container py-4" id="shadow">
+
+        <!-- breadcrumb -->
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">News</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Global</li>
+          </ol>
+        </nav>
+        <div class="row">
+          <div class="col-12 col-md-8">
+            <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h1>
+            <div class="single-page"></div>
+          </div>
+          <div class="col-12 col-md-8 single">
+            <div class="small">
+              <hr>
+              <img src="img/avatar.png" alt="">
+              <span>Posted By<a href="" class="mx-1">Admin</a></span>
+              <a href="" class="mx-2"><i class="fa-solid fa-calendar-days"></i>
+              <span>August 8, 2022</span>
+              </a>
+              <a href="" class="mx-2"><i class="fa-solid fa-comment"></i></span>
+              <span>17</span></a>
+              <hr>
+             </div>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-12 col-md-8 ">
+            <img src="img/user1.jpg" alt="" width="100%" height="400px">
+            <div class="single-paragraph">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat deserunt laudantium est accusamus ipsum eos, repudiandae soluta temporibus facilis itaque mollitia, aspernatur odit nisi? Repudiandae consequatur expedita quidem ab eaque.
+              </p>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam ipsum quaerat perspiciatis dolores natus praesentium veniam, magnam quidem cumque, iure non ea quibusdam! Architecto consequatur recusandae deleniti eligendi modi tenetur, pariatur, non, unde in suscipit iure nostrum id sit quia?
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sunt soluta id commodi eaque maxime laborum repellat. Ea impedit pariatur quaerat iste illum, iure numquam autem nisi itaque facere optio provident, nemo tempore, quos modi atque maxime dolorum consequatur cupiditate eligendi vero obcaecati! Laborum, error totam ex praesentium libero rem!
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, iure ipsa ipsam perspiciatis consequatur temporibus minima non repellat tenetur enim culpa dolore cumque esse doloribus sed quasi, impedit quo accusamus!
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit saepe aspernatur officiis animi! Fuga illo fugit excepturi aspernatur ad cumque.
+              </p>
+            </div>
+
+            <!-- tags -->
+            <div>
+              <span><strong>Tags:</strong></span>
+              <span><a href="#" class="single-btn-link hero-btn">Lorem, ipsum.</a></span>
+            </div>
+
+            <div class="single-update">
+              <h5><strong>For New & Trending Updates</strong></h5>
+              <h5><a href="#">Join Buzzup Whatsapp Group</a></h5>
+              <h5><a href="#">Join Buzzup Telegram Channel</a></h5>
+              <h5><a href="#">Add BuzzUp On Facebook</a></h5>
+              <h5><a href="#">Follow BuzzUp On Twitter</a></h5>
+              <h5><a href="#">Follow Buzzup On Instagram</a></h5>
+            </div>
+
+            <div class="single-share">
+              <h4>Share Post</h4>
+              <a href="#" class="btn btn-secondary mb-2"><i class="fab fa-facebook mr-1"></i>facebook</a>
+              <a href="#" class="btn btn-secondary mb-2"><i class="fab fa-twitter mr-1"></i>Twitter</a>
+              <a href="#" class="btn btn-secondary mb-2"><i class="fab fa-instagram mr-1"></i>Instagram</a>
+              <a href="#" class="btn btn-secondary mb-2"><i class="fab fa-tumblr mr-1"></i>Tumblr</a>
+              <a href="#" class="btn btn-secondary mb-2"><i class="fab fa-whatsapp mr-1"></i>Whatsapp</a>
+              <a href="#" class="btn btn-secondary mb-2"><i class="fab fa-telegram mr-1"></i>Telegram</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- related posts -->
+        <div class="row">
+          <div class="col-12 col-md-6 related">
+            <h6>Related Posts</h6>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 col-md-3 related1">
+            <p>
+              <a href="#">
+               NEWS: Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore magni tempora cumque exercitationem quis
+              </a>
+            </p>
+            <span>August 9, 2022 in "News"</span>
+          </div>
+          <div class="col-12 col-md-3 related1">
+            <p>
+              <a href="#">
+              NEWS: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam, harum.
+              </a>
+            </p>
+            <span>August 9, 2022 in "News"</span>
+          </div>
+          <div class="col-12 col-md-3 related1">
+            <p>
+              <a href="#">
+              NEWS: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus.
+              </a>
+            </p>
+            <span>August 9, 2022 in "News"</span>
+          </div>
+        </div>       
+      </div>
+    </section>
+
+
+<!-- comment field -->
+    <section class="mx-3">
+      <div class="container comment" id="shadow">
+        <div class="row pt-5">
+          <div class="col-12 col-md-8">
+            <h4><em>10 Comments</em></h4>
+          </div>
+        </div>
+        <hr>
+
+        <div class="row">
+          <div class="col-11 col-md-8 com-reply">
+            <img src="img/user2.jpg" alt="" class="d-none d-md-block">
+            <div>
+              <h6><strong>John Doe</strong></h6>
+              <main>
+                <i class="fa-solid fa-calendar-days"></i>
+                <span>August 15, 2022</span>               
+                <i class="fas fa-clock"></i>
+                <span>6:30PM</span>
+                <a href="#">Reply</a>
+              </main>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quia tempora ipsum provident cum ducimus, blanditiis aut laboriosam. Nulla, aperiam.</p>  
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-11 col-md-8 com-reply1">
+            <img src="img/reply1.webp" alt="" class="d-none d-md-block">
+            <div>
+              <h6><strong>Jeremy Peterson</strong></h6>
+              <main>
+                <i class="fa-solid fa-calendar-days"></i>
+                <span>August 15, 2022</span>               
+                <i class="fas fa-clock"></i>
+                <span>6:30PM</span>
+              </main>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quia tempora ipsum provident cum ducimus, blanditiis aut laboriosam. Nulla, aperiam.</p>  
+            </div>
+          </div>
+        </div>
+        <hr>
+
+        <div class="row">
+          <div class="col-11 col-md-8 com-reply">
+            <img src="img/comment1.webp" alt="" class="d-none d-md-block">
+            <div>
+              <h6><strong>Calvin Wealth</strong></h6>
+              <main>
+                <i class="fa-solid fa-calendar-days"></i>
+                <span>August 8, 2022</span>               
+                <i class="fas fa-clock"></i>
+                <span>9:01AM</span>
+                <a href="#">Reply</a>
+              </main>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quia tempora ipsum provident cum ducimus, blanditiis aut laboriosam. Nulla, aperiam.</p>  
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-11 col-md-8 com-reply1">
+            <img src="img/reply2.webp" alt="" class="d-none d-md-block">
+            <div>
+              <h6><strong>Gigi</strong></h6>
+              <main>
+                <i class="fa-solid fa-calendar-days"></i>
+                <span>August 15, 2022</span>               
+                <i class="fas fa-clock"></i>
+                <span>6:30PM</span>
+              </main>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quia tempora ipsum provident cum ducimus, blanditiis aut laboriosam. Nulla, aperiam.</p>  
+            </div>
+          </div>
+        </div>
+        <hr>
+
+        <div class="row">
+          <div class="col-11 col-md-8 com-reply">
+            <img src="img/user1.jpg" alt="" class="d-none d-md-block">
+            <div>
+              <h6><strong>Helen Johnson</strong></h6>
+              <main>
+                <i class="fa-solid fa-calendar-days"></i>
+                <span>August 8, 2022</span>               
+                <i class="fas fa-clock"></i>
+                <span>9:01AM</span>
+                <a href="#">Reply</a>
+              </main>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quia tempora ipsum provident cum ducimus, blanditiis aut laboriosam. Nulla, aperiam.</p>  
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-11 col-md-8 com-reply1">
+            <img src="img/reply3.webp" alt="" class="d-none d-md-block">
+            <div>
+              <h6><strong>Laura Carter</strong></h6>
+              <main>
+                <i class="fa-solid fa-calendar-days"></i>
+                <span>August 15, 2022</span>               
+                <i class="fas fa-clock"></i>
+                <span>6:30PM</span>
+              </main>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quia tempora ipsum provident cum ducimus, blanditiis aut laboriosam. Nulla, aperiam.</p>  
+            </div>
+          </div>
+        </div>
+        <hr>
+
+        <div class="row">
+          <div class="col-11 col-md-8 com-reply">
+            <img src="img/comment.jpeg" alt="" class="d-none d-md-block">
+            <div>
+              <h6><strong>Ejike David</strong></h6>
+              <main>
+                <i class="fa-solid fa-calendar-days"></i>
+                <span>August 8, 2022</span>               
+                <i class="fas fa-clock"></i>
+                <span>9:01AM</span>
+                <a href="#">Reply</a>
+              </main>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quia tempora ipsum provident cum ducimus, blanditiis aut laboriosam. Nulla, aperiam.</p>  
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-11 col-md-8 com-reply1">
+            <img src="img/avatar.png" alt="" class="d-none d-md-block">
+            <div>
+              <h6><strong>Trevor Adeyinka</strong></h6>
+              <main>
+                <i class="fa-solid fa-calendar-days"></i>
+                <span>August 15, 2022</span>               
+                <i class="fas fa-clock"></i>
+                <span>6:30PM</span>
+              </main>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quia tempora ipsum provident cum ducimus, blanditiis aut laboriosam. Nulla, aperiam.</p>  
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-11 col-md-8 com-reply1">
+            <img src="img/reply2.webp" alt="" class="d-none d-md-block">
+            <div>
+              <h6><strong>Gigi</strong></h6>
+              <main>
+                <i class="fa-solid fa-calendar-days"></i>
+                <span>August 15, 2022</span>               
+                <i class="fas fa-clock"></i>
+                <span>6:30PM</span>
+              </main>
+              <p><span>@Trevor Adeyinka</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quia tempora ipsum provident cum ducimus, blanditiis aut laboriosam. Nulla, aperiam.</p>  
+            </div>
+          </div>
+        </div>
+        <hr>
+
+        <div class="row">
+          <div class="col-11 col-md-8 com-reply">
+            <img src="img/comment4.webp" alt="" class="d-none d-md-block">
+            <div>
+              <h6><strong>Chika Nkem</strong></h6>
+              <main>
+                <i class="fa-solid fa-calendar-days"></i>
+                <span>August 8, 2022</span>               
+                <i class="fas fa-clock"></i>
+                <span>9:01AM</span>
+                <a href="#">Reply</a>
+              </main>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quia tempora ipsum provident cum ducimus, blanditiis aut laboriosam. Nulla, aperiam.</p>  
+            </div>
+          </div>
+        </div>
+        <hr>
+
+        <div class="row py-3">
+          <div class="col-12 col-md-8">
+            <div class="comment-box">
+              <h5><strong>Leave a Comment</strong></h5>
+              <p>Your details will not be made public.</p>
+              <form class="comment-form">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="name" placeholder="Enter Name" name="name" required>
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" id="email" placeholder="Enter Email" name="Email" required>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" id="email" placeholder="Enter Website" name="Email" required>
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" rows="5" cols="5" id="comment" placeholder="Your Comment"></textarea>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="checkbox" name="check1">
+                  <label for="check1" class="form-check-label">save my details for the next time I comment.</label>
+                </div>
+                <button type="submit" class="comment-btn mt-5">POST COMMENT</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+      
+  
+  <!-- Trending -->
+  <section class="mx-3">
+    <div class="container navbg1 height mb-5" id="shadow">
+      <div class="row py-3">
+        <div class="col-12 col-md-8">
+          <h2 class=" text-capitalize text-danger">
+            <strong>trending</strong>
+            <div class="title-underline4 bg-danger ml-0"></div>
+          </h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-8">
+          <a href="#" class="">
+           <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis accusamus architecto recusandae voluptatibus ex ullam eum amet quis vel pariatur.
+           </p>
+          </a>
+        </div>
+      </div>
+      <hr class="bg-secondary w-50 ml-0">
+      <div class="row">
+        <div class="col-12 col-md-8">
+          <a href="#" class="">
+           <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis accusamus architecto recusandae voluptatibus ex ullam eum amet quis vel pariatur.
+           </p>
+          </a>
+        </div>
+      </div>
+      <hr class="bg-secondary w-50 ml-0">
+      <div class="row">
+        <div class="col-12 col-md-8">
+          <a href="#" class="">
+           <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis accusamus architecto recusandae voluptatibus ex ullam eum amet quis vel pariatur.
+           </p>
+          </a>
+        </div>
+      </div>
+      <hr class="bg-secondary w-50 ml-0">
+      <div class="row">
+        <div class="col-12 col-md-8">
+          <a href="#" class="">
+           <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis accusamus architecto recusandae voluptatibus ex ullam eum amet quis vel pariatur.
+           </p>
+          </a>
+        </div>
+      </div>
+      <hr class="bg-secondary w-50 ml-0">
+      <div class="row">
+        <div class="col-12 col-md-8">
+          <a href="#" class="">
+           <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis accusamus architecto recusandae voluptatibus ex ullam eum amet quis vel pariatur.
+           </p>
+          </a>
+        </div>
+      </div>
+      <hr class="bg-secondary w-50 ml-0">
+      <div class="row">
+        <div class="col-12 col-md-8">
+          <a href="#" class="">
+           <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis accusamus architecto recusandae voluptatibus ex ullam eum amet quis vel pariatur.
+           </p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+
+  <section class="py-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h4 class="text-capitalize">
+            <em>Follow Us</em>
+          </h4>
+          <div class="icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fab fa-telegram"></i></a>
+            <a href="#"><i class="fab fa-tumblr"></i></a>
+
+          </div>
+          <p class="font-italic py-5"><small>Copyright &copy; by Hope Daniel: All Rights Reserved.</p></small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--modal-->
+  <div class="modal fade" id="modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <!--modal header-->
+      <div class="modal-header">
+        <h3 class="modal-title">For Advert placement, Contact Us Via:</h3>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <!--modal body-->
+      <div class="modal-body">
+        <div>
+          <span>
+            <i class="fas fa-envelope-open-text"></i>
+          </span>
+          <span>
+            Buzzup@gmail.com
+          </span>         
+        </div>
+        <hr>
+        <div>
+          <span>
+            <i class="fa-solid fa-phone"></i>
+          </span>
+          <span>
+            08148103758, 09053124498.
+          </span>         
+        </div>
+        <hr>
+        <div>
+          <span>
+            <i class="fab fa-whatsapp-square"></i>
+          </span>
+          <span>
+            08148103758.
+          </span>         
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+ 
+
+  <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script> -->
+
+  <script src="topBtn.js"></script>
+
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+</body>
+</html>
